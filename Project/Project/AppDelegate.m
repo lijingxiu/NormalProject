@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "STTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -27,8 +28,8 @@
 }
 - (void)layoutMainView:(id)sender
 {
-    ViewController *vc = [[ViewController alloc] init];
-    [self.window setRootViewController:vc];
+    STTabBarController *tabbarController = [[STTabBarController alloc] init];
+    [self.window setRootViewController:tabbarController];
 }
 
 

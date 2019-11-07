@@ -9,7 +9,6 @@ PODS:
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
   - NYXImagesKit (2.3)
-  - RDVTabBarController (1.3.0)
   - SDWebImage (5.1.1):
     - SDWebImage/Core (= 5.1.1)
   - SDWebImage/Core (5.1.1)
@@ -25,7 +24,6 @@ DEPENDENCIES:
   - MJRefresh
   - MLeaksFinder
   - NYXImagesKit
-  - RDVTabBarController
   - SDWebImage
   - TZImagePickerController
   - YYText
@@ -44,8 +42,6 @@ SPEC REPOS:
     - SDWebImage
     - TZImagePickerController
     - YYText
-  trunk:
-    - RDVTabBarController
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
@@ -57,11 +53,10 @@ SPEC CHECKSUMS:
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
-  RDVTabBarController: 28a5c6546b9991cf2712d59947324c6b06603e14
   SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
   TZImagePickerController: f321e8db6cd18dc6ac8e23694961c158a9345a87
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: c210c86c0c0315544991b51ee0f8dab88d6f3e28
+PODFILE CHECKSUM: cb4d021acd94a024318b8ad4f2e9c9ab5af1c58e
 
 COCOAPODS: 1.8.4

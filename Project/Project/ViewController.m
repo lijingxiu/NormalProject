@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.contentView.backgroundColor = [UIColor redColor];
 //    self.view.backgroundColor = [UIColor redColor];
    CGRect frame = self.view.frame;
     NSLog(@"self.view - frame - %@", NSStringFromCGRect(frame));
@@ -34,6 +35,12 @@
     CGRect frame = self.view.frame;
     NSLog(@"self.view - frame - %@", NSStringFromCGRect(frame));
     
+    if (@available(iOS 11.0, *)) {
+        CGFloat safeAreaBottom = UIApplication.sharedApplication.keyWindow.safeAreaInsets.top;
+        NSLog(@"self.view - layoutFrame - %@,  %f", UIApplication.sharedApplication.keyWindow.safeAreaInsets,safeAreaBottom);
+
+        
+    }
     CGRect layoutFrame = self.view.safeAreaLayoutGuide.layoutFrame;
     NSLog(@"self.view - layoutFrame - %@", NSStringFromCGRect(layoutFrame));
     

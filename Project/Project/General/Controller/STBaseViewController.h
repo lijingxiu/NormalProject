@@ -7,10 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "STTopBar.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface STBaseViewController : UIViewController
+
+@property (nonatomic, assign) CGFloat iosChangeFloat;
+@property (nonatomic, assign) CGFloat tabbarHeight;
+@property (nonatomic, strong) NSMutableArray *netRequest;
+@property (nonatomic, strong) UIView *contentView;
+@property (nonatomic, strong) UIView *statusView;
+
+//取消网络。
+- (void)cancelAllNetRequest;
 
 @end
 

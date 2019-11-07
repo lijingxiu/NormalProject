@@ -48,6 +48,29 @@
     
     [self.view addSubview:[self contentView]];
     [self.view addSubview:[self tabBar]];
+    [self resizeUI];
+}
+- (void)resizeUI {
+    CGSize viewSize = self.view.bounds.size;
+    CGFloat tabBarStartingY = viewSize.height;
+    CGFloat contentViewHeight = viewSize.height;
+    CGFloat tabBarHeight = kTabBarHeight;
+    if (@available(iOS 11.0, *)) {
+       CGFloat safeAreaBottom = UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom;
+       tabBarHeight = tabBarHeight + safeAreaBottom / 1.5f;
+    }
+
+   if (!self.tabBarHidden) {
+       tabBarStartingY = viewSize.height - tabBarHeight;
+       if (![[self tabBar] isTranslucent]) {
+           contentViewHeight -= ([[self tabBar] minimumContentHeight] ?: tabBarHeight);
+       }
+   }
+
+   [[self tabBar] setFrame:CGRectMake(0, tabBarStartingY, viewSize.width, tabBarHeight)];
+   [[self contentView] setFrame:CGRectMake(0, 0, viewSize.width, contentViewHeight)];
+   [[[self selectedViewController] view] setFrame:[[self contentView] bounds]];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -58,34 +81,6 @@
 
 -(void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
-
-    CGSize viewSize = self.view.bounds.size;
-    CGFloat tabBarStartingY = viewSize.height;
-    CGFloat contentViewHeight = viewSize.height;
-    CGFloat tabBarHeight = CGRectGetHeight([[self tabBar] frame]);
-
-    if (!tabBarHeight) {
-        if (@available(iOS 11.0, *)) {
-            CGFloat safeAreaBottom = UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom;
-            tabBarHeight = 58.f + safeAreaBottom / 1.5f;
-        } else {
-            tabBarHeight = 58.f;
-        }
-    } else if (@available(iOS 11.0, *)) {
-        CGFloat safeAreaBottom = UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom;
-        tabBarHeight = 58.f + safeAreaBottom / 1.5f;
-    }
-
-    if (!self.tabBarHidden) {
-        tabBarStartingY = viewSize.height - tabBarHeight;
-        if (![[self tabBar] isTranslucent]) {
-            contentViewHeight -= ([[self tabBar] minimumContentHeight] ?: tabBarHeight);
-        }
-    }
-
-    [[self tabBar] setFrame:CGRectMake(0, tabBarStartingY, viewSize.width, tabBarHeight)];
-    [[self contentView] setFrame:CGRectMake(0, 0, viewSize.width, contentViewHeight)];
-    [[[self selectedViewController] view] setFrame:[[self contentView] bounds]];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
