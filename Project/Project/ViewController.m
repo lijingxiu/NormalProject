@@ -16,36 +16,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.contentView.backgroundColor = [UIColor redColor];
+//    self.contentView.backgroundColor = [UIColor redColor];
+    UIView *view = [[UIView alloc] initWithFrame:self.contentView.bounds];
+    view.backgroundColor = [UIColor yellowColor];
+    [self.contentView addSubview:view];
+    self.topBar.navTitle = @"hello baby";
+    
 //    self.view.backgroundColor = [UIColor redColor];
-   CGRect frame = self.view.frame;
-    NSLog(@"self.view - frame - %@", NSStringFromCGRect(frame));
-    
-    CGRect layoutFrame = self.view.safeAreaLayoutGuide.layoutFrame;
-    NSLog(@"self.view - layoutFrame - %@", NSStringFromCGRect(layoutFrame));
-    
-    UIEdgeInsets insets = self.view.safeAreaInsets;
-    NSLog(@"self.view - insets - %@", NSStringFromUIEdgeInsets(insets));
+//   CGRect frame = self.view.frame;
+//    NSLog(@"self.view - frame - %@", NSStringFromCGRect(frame));
+//
+//    CGRect layoutFrame = self.view.safeAreaLayoutGuide.layoutFrame;
+//    NSLog(@"self.view - layoutFrame - %@", NSStringFromCGRect(layoutFrame));
+//
+//    UIEdgeInsets insets = self.view.safeAreaInsets;
+//    NSLog(@"self.view - insets - %@", NSStringFromUIEdgeInsets(insets));
     // Do any additional setup after loading the view.
 }
 
-- (void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
+//- (void)navBack{
+//    NSLog(@"self");
+//}
 
-    CGRect frame = self.view.frame;
-    NSLog(@"self.view - frame - %@", NSStringFromCGRect(frame));
-    
-    if (@available(iOS 11.0, *)) {
-        CGFloat safeAreaBottom = UIApplication.sharedApplication.keyWindow.safeAreaInsets.top;
-        NSLog(@"self.view - layoutFrame - %@,  %f", UIApplication.sharedApplication.keyWindow.safeAreaInsets,safeAreaBottom);
 
-        
-    }
-    CGRect layoutFrame = self.view.safeAreaLayoutGuide.layoutFrame;
-    NSLog(@"self.view - layoutFrame - %@", NSStringFromCGRect(layoutFrame));
-    
-    UIEdgeInsets insets = self.view.safeAreaInsets;
-    NSLog(@"self.view - insets - %@", NSStringFromUIEdgeInsets(insets));
-}
+
 
 @end

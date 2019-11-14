@@ -35,7 +35,12 @@
 		B03B99C4236C0554007523A3 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B03B99BE236C0553007523A3 /* RDVTabBar.m */; };
 		B03B99C5236C0554007523A3 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03B99C2236C0553007523A3 /* RDVTabBarController.m */; };
 		B03B99C6236C0554007523A3 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B03B99C3236C0553007523A3 /* RDVTabBarItem.m */; };
+		B05741D72373EDD700C3E775 /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = B05741D52373EDD700C3E775 /* UIColor+expanded.m */; };
+		B05741DB2374236B00C3E775 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05741DA2374236B00C3E775 /* Launch Screen.storyboard */; };
 		B07FF57D2351C26A00FB1FD4 /* STBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07FF57C2351C26A00FB1FD4 /* STBaseViewController.m */; };
+		B09B753B237C3805001BD753 /* STRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B09B753A237C3804001BD753 /* STRequest.m */; };
+		B09B753F237C386A001BD753 /* STRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B09B753E237C386A001BD753 /* STRequestManager.m */; };
+		B09B7543237C3AE2001BD753 /* UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = B09B7542237C3AE2001BD753 /* UUID.m */; };
 		B0C907A1234C458400A47628 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C907A0234C458400A47628 /* AppDelegate.m */; };
 		B0C907A7234C458400A47628 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C907A6234C458400A47628 /* ViewController.m */; };
 		B0C907AC234C458500A47628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C907AB234C458500A47628 /* Assets.xcassets */; };
@@ -83,10 +88,19 @@
 		B03B99C1236C0553007523A3 /* RDVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBar.h; sourceTree = "<group>"; };
 		B03B99C2236C0553007523A3 /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
 		B03B99C3236C0553007523A3 /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
+		B05741D52373EDD700C3E775 /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+expanded.m"; sourceTree = "<group>"; };
+		B05741D62373EDD700C3E775 /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+expanded.h"; sourceTree = "<group>"; };
+		B05741DA2374236B00C3E775 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B07FF57A2351B8A900FB1FD4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B07FF57B2351C26A00FB1FD4 /* STBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STBaseViewController.h; sourceTree = "<group>"; };
 		B07FF57C2351C26A00FB1FD4 /* STBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STBaseViewController.m; sourceTree = "<group>"; };
 		B07FF5832354145600FB1FD4 /* STGlobalDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STGlobalDef.h; sourceTree = "<group>"; };
+		B09B7539237C3804001BD753 /* STRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STRequest.h; sourceTree = "<group>"; };
+		B09B753A237C3804001BD753 /* STRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STRequest.m; sourceTree = "<group>"; };
+		B09B753D237C386A001BD753 /* STRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STRequestManager.h; sourceTree = "<group>"; };
+		B09B753E237C386A001BD753 /* STRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STRequestManager.m; sourceTree = "<group>"; };
+		B09B7541237C3AE2001BD753 /* UUID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UUID.h; sourceTree = "<group>"; };
+		B09B7542237C3AE2001BD753 /* UUID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UUID.m; sourceTree = "<group>"; };
 		B0C9079C234C458400A47628 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C9079F234C458400A47628 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B0C907A0234C458400A47628 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -130,6 +144,8 @@
 		B03B998A236BCD3A007523A3 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B05741D62373EDD700C3E775 /* UIColor+expanded.h */,
+				B05741D52373EDD700C3E775 /* UIColor+expanded.m */,
 				B03B998B236BCDEF007523A3 /* UIView+Util.h */,
 				B03B998C236BCDEF007523A3 /* UIView+Util.m */,
 			);
@@ -197,14 +213,6 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		B07FF5732351B6ED00FB1FD4 /* Vender */ = {
-			isa = PBXGroup;
-			children = (
-				B03B998A236BCD3A007523A3 /* Category */,
-			);
-			path = Vender;
-			sourceTree = "<group>";
-		};
 		B07FF5742351B72E00FB1FD4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +254,9 @@
 		B07FF5782351B7D100FB1FD4 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B09B7540237C3AB8001BD753 /* Helper */,
+				B03B998A236BCD3A007523A3 /* Category */,
+				B09B753C237C380D001BD753 /* Network */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -276,6 +287,26 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		B09B753C237C380D001BD753 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B09B7539237C3804001BD753 /* STRequest.h */,
+				B09B753A237C3804001BD753 /* STRequest.m */,
+				B09B753D237C386A001BD753 /* STRequestManager.h */,
+				B09B753E237C386A001BD753 /* STRequestManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B09B7540237C3AB8001BD753 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B09B7541237C3AE2001BD753 /* UUID.h */,
+				B09B7542237C3AE2001BD753 /* UUID.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		B0C90793234C458400A47628 = {
 			isa = PBXGroup;
 			children = (
@@ -297,7 +328,6 @@
 		B0C9079E234C458400A47628 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				B07FF5732351B6ED00FB1FD4 /* Vender */,
 				B07FF5712351B6C500FB1FD4 /* General */,
 				B07FF5722351B6CF00FB1FD4 /* Modules */,
 				B0C9079F234C458400A47628 /* AppDelegate.h */,
@@ -308,6 +338,7 @@
 				B0C907B0234C458500A47628 /* Info.plist */,
 				B0C907B1234C458500A47628 /* main.m */,
 				B07FF57A2351B8A900FB1FD4 /* PrefixHeader.pch */,
+				B05741DA2374236B00C3E775 /* Launch Screen.storyboard */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -377,6 +408,7 @@
 				B03B99B5236BD360007523A3 /* third_normal@2x.png in Resources */,
 				B03B99B1236BD360007523A3 /* first_normal.png in Resources */,
 				B03B99B9236BD360007523A3 /* first_selected@2x.png in Resources */,
+				B05741DB2374236B00C3E775 /* Launch Screen.storyboard in Resources */,
 				B03B99AD236BD360007523A3 /* second_normal@2x.png in Resources */,
 				B03B99B0236BD360007523A3 /* navigationbar_background_tall@2x.png in Resources */,
 				B03B99BA236BD360007523A3 /* tabbar_selected_background.png in Resources */,
@@ -447,14 +479,18 @@
 				B0C907A7234C458400A47628 /* ViewController.m in Sources */,
 				B03B998D236BCDEF007523A3 /* UIView+Util.m in Sources */,
 				B0C907A1234C458400A47628 /* AppDelegate.m in Sources */,
+				B09B753F237C386A001BD753 /* STRequestManager.m in Sources */,
 				B07FF57D2351C26A00FB1FD4 /* STBaseViewController.m in Sources */,
 				B03B9985236AC764007523A3 /* STBaseView.m in Sources */,
 				B03B99C6236C0554007523A3 /* RDVTabBarItem.m in Sources */,
+				B05741D72373EDD700C3E775 /* UIColor+expanded.m in Sources */,
+				B09B7543237C3AE2001BD753 /* UUID.m in Sources */,
 				B03B9993236BD19B007523A3 /* STTabBarController.m in Sources */,
 				B03B99C5236C0554007523A3 /* RDVTabBarController.m in Sources */,
 				B03B9988236AC77D007523A3 /* STTopBar.m in Sources */,
 				B03B9990236BD040007523A3 /* STNavigationController.m in Sources */,
 				B03B99C4236C0554007523A3 /* RDVTabBar.m in Sources */,
+				B09B753B237C3805001BD753 /* STRequest.m in Sources */,
 				B0C907B2234C458500A47628 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

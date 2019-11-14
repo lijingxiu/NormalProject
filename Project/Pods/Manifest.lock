@@ -1,5 +1,20 @@
 PODS:
   - ActionSheetPicker-3.0 (2.3.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - FBRetainCycleDetector (0.1.4)
   - InputKit (1.1.15)
   - Masonry (1.1.0)
@@ -17,6 +32,7 @@ PODS:
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0
+  - AFNetworking
   - InputKit
   - Masonry
   - MBProgressHUD
@@ -42,9 +58,12 @@ SPEC REPOS:
     - SDWebImage
     - TZImagePickerController
     - YYText
+  trunk:
+    - AFNetworking
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   InputKit: b82938c2c684d285909cac9de150739aa4814d10
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -57,6 +76,6 @@ SPEC CHECKSUMS:
   TZImagePickerController: f321e8db6cd18dc6ac8e23694961c158a9345a87
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: cb4d021acd94a024318b8ad4f2e9c9ab5af1c58e
+PODFILE CHECKSUM: 5dc1e06f8bca120a9046d1b67a3de32fb78475ea
 
 COCOAPODS: 1.8.4

@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBarHidden = YES;
     [self setupViewControllers];
 
     // Do any additional setup after loading the view.
@@ -27,8 +28,6 @@
 
 -(void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
-
-   
 }
 
 - (void)setupViewControllers {

@@ -1,17 +1,9 @@
 platform :ios, '8.0'
 inhibit_all_warnings!
 target "Project" do
-# pod 'IQKeyboardManager'
-# pod 'FMDB'
-# pod 'JDStatusBarNotification'
-# pod 'ReactiveObjC'
+pod 'AFNetworking'
 pod 'ActionSheetPicker-3.0'
-# pod 'VRGCalendarView'
 pod 'MJRefresh'
-# pod 'OpenUDID'
-# pod 'NJKWebViewProgress'
-# pod 'SSZipArchive'
-# pod 'BaiduMapKit'
 # 等待框
 pod 'MBProgressHUD'
 # 堆栈
@@ -41,3 +33,15 @@ post_install do |installer|
    end
   end
 end
+
+
+# pod 'IQKeyboardManager'
+# pod 'FMDB'
+# pod 'JDStatusBarNotification'
+# pod 'ReactiveObjC'
+# pod 'OpenUDID'
+# pod 'NJKWebViewProgress'
+# pod 'SSZipArchive'
+# pod 'BaiduMapKit'
+# pod 'VRGCalendarView'
+

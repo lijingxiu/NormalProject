@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface STBaseView : UIView
 
-@property (nonatomic,assign)float iosChangeFloat;
+@property (nonatomic,assign)CGFloat iosChangeFloat;
 
 @end
 

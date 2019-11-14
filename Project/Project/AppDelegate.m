@@ -29,7 +29,8 @@
 - (void)layoutMainView:(id)sender
 {
     STTabBarController *tabbarController = [[STTabBarController alloc] init];
-    [self.window setRootViewController:tabbarController];
+    self.rootController = [[STNavigationController alloc] initWithRootViewController:tabbarController];
+    [self.window setRootViewController:self.rootController];
 }
 
 
